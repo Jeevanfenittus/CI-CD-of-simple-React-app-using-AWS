@@ -39,5 +39,5 @@ jobs:
         run: aws s3 sync build/ s3://project-bucket-react/ --delete
   
 
-      - name: Invalidate CloudFront cache
-        run: aws cloudfront create-invalidation --distribution-id E123ABC456DEF --paths "/*" # 👈 replace
+      - name: web distribution
+        run: aws cloudfront create-invalidation --distribution-id E1MUF5IPP1X515 --paths "/*" 
